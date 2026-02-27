@@ -4,11 +4,15 @@
 ================================ */
 :root {
   --acento: #00f5a0;
+  --acento2: #04d9ff;
   --fondo: #0a0a0f;
+  --fondo2: #2798F5;
   --fondo-card: #111118;
   --fondo-card2: #16161f;
+  --fondo-card3: #E3EAFA;
   --borde: rgba(255, 255, 255, 0.08);
   --texto: #f0f0f8;
+  --texto-oscuro:#000;
   --texto-suave: #7a7a9a;
 }
 
@@ -26,8 +30,8 @@
 ================================ */
 body {
   font-family: 'Urbanist', sans-serif;
-  background-color: var(--fondo);
-  color: var(--texto);
+  background: linear-gradient(to top, var(--fondo),var(--fondo2));
+  color: var(--texto-oscuro);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +42,7 @@ body {
    TARJETA
 ================================ */
 .tarjeta {
-  background-color: var(--fondo-card);
+  background-color: var(--fondo-card3);
   border: 1px solid var(--borde);
   border-radius: 28px;
   padding: 36px;
@@ -70,7 +74,7 @@ body {
 .avatar {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 10%;
   border: 3px solid var(--acento);
   flex-shrink: 0;
 }
@@ -78,7 +82,7 @@ body {
 .nombre {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2rem;
-  color: var(--texto);
+  color: var(--texto-oscuro);
   letter-spacing: 1px;
   line-height: 1;
   margin-bottom: 4px;
@@ -86,7 +90,7 @@ body {
 
 .rol {
   font-size: 0.78rem;
-  color: var(--acento);
+  color: var(--fondo2);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -97,7 +101,7 @@ body {
 ================================ */
 .bio {
   font-size: 0.9rem;
-  color: var(--texto-suave);
+  color: var(--texto-oscuro);
   line-height: 1.75;
   font-weight: 300;
   border-left: 2px solid var(--acento);
@@ -131,23 +135,24 @@ body {
 }
 
 .stat:hover {
-  background: var(--fondo-card2);
+  background-color: var(--fondo2);
 }
 
 .stat-numero {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.8rem;
-  color: var(--texto);
+  color: var(--texto-oscuro);
   letter-spacing: 1px;
 }
 
 .stat-label {
   font-size: 0.7rem;
-  color: var(--texto-suave);
+  color: var(--texto-oscuro);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 2px;
 }
+
 
 /* ================================
    BOTONES
@@ -181,7 +186,7 @@ body {
 
 .btn-secundario {
   background: transparent;
-  color: var(--texto);
+  color: var(--texto-oscuro);
   border: 1px solid var(--borde);
 }
 
