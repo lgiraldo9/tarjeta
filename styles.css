@@ -48,7 +48,7 @@ body {
   padding: 36px;
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 40px 80px var(--fondo2);
   animation: fadeUp 0.7s ease both;
 }
 
